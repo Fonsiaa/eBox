@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eBox</title> <!-- name of the tab-->
+    <!--font for the icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!--external linking for css-->
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+<!--header of the website-->
+<header>
+    eBox <!--name of the website-->
+</header>
+    
+<!--navigational bar-->
+<div class="screen-menu">
+    <ul>
+       <a href="/login/login.html"><li>Login <i class="fa fa-user-circle" aria-hidden="true"></i></li></a>
+       <a href="#"><li>Wishlist <i class="fa fa-heart" aria-hidden="true"></i></li></a>
+       <a href="/checkout/checkout.html"><li>Checkout <i class="fa fa-heart" aria-hidden="true"></i></li></a>
+    </ul>
+    <br>
+    <ul>
+    </ul>
+</div>
+
+<!--this will create the hamburger menu-->
+<nav>
+    <div class="menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</nav>
+
+
+<!--the sider effect-->
+<div class="caro"> 
+    <div class="list"> <!-- listing the items-->
+
+        <!--item 1 on the list-->
+        <div class="item">
+            <img src="/img/laptop.png">
+            <div class="intro">
+                <div class="title">Category</div>
+                <div class="topic">Laptop</div>
+                <div class="des">
+                    
+                </div>
+                <a href=""><button class="seeMore">SEE MORE &#8599</button></a>
+            </div>
+        </div>
+
+        <!--item 2 - the active side-->
+        <div class="item">
+            <img src="/img/2.png" width="50px" height="360px">
+            <div class="intro">
+                <div class="title">Category</div>
+                <div class="topic">Phones</div>
+                <div class="des">
+                    A device that improves your experience by combining clever features, strong performance, 
+                    and elegant design. With its incredible display and lightning-fast speed, it keeps you interested 
+                    and entertained on the go. Every moment is captured artistically and clearly by its advanced camera technology.    </div>
+                <a href="/phone/phone.html"><button class="seeMore">SEE MORE &#8599</button></a>
+            </div>
+        </div>
+
+        <!--item 3 of the list -->
+        <div class="item">
+            <img src="img/aWatch.jpeg">
+            <div class="intro">
+                <div class="title">Category</div>
+                <div class="topic">Watches</div>
+                <div class="des">
+                    Discover elegance in simply waist wear with it minimal design and functionality 
+                    that can be bended with different style.
+                </div>
+                <a href=""><button class="seeMore">SEE MORE &#8599</button></a>
+            </div>
+        </div>
+
+        <!--item 4 of the list-->
+        <div class="item">
+            <img src="/img/meta.jpeg">
+            <div class="intro">
+                <div class="title">Category</div>
+                <div class="topic">Meta</div>
+                <div class="des">
+                    Get to a whole new world, where 
+                </div>
+                <a href="pages/"><button class="seeMore">SEE MORE &#8599</button></a>
+            </div>
+        </div>
+    </div>
+
+<!--the button for the carousel -->
+    <div class="arrows">
+        <!--button going to the left-->
+        <button id="prev">&lt;</button>
+        <!--button going the right-->
+        <button id="next">&gt;</button>
+    </div>
+</div>
+
+<!-- Filtering Options -->
+<div class="wrapper">
+    <div id="search-container">
+      <input
+        type="search"
+        id="search-input"
+        placeholder="Search product name here.."
+      />
+      <button id="search">Search</button>
+    </div>
+    <div id="products"></div>
+  </div>
+
+<!------------------------------------------>
+<!--shopping gallery-->
+<h1>Latest Technology</h1>
+<div class="container">
+    <div class="gallery">
+        <div class="item">
+            <img src="/img/aWatch.jpeg" alt="Product 1">
+            <div class="info">
+                <h2>Apple</h2>
+                <h5>Watch Ultra 2 GPS + Cellular, 49mm Titanium Case With White Ocean Band</h5>
+                <p>Model Number : MREJ3AE/A, MRF93ZA/A , MREJ3VC/A</p>
+                <a href="#">See More</a>
+            
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="/img/meta.jpeg" alt="Product 2">
+            <div class="info">
+                <h3>Product 2</h3>
+                <p>$30</p>
+            </div>
+        </div>
+        
+        <div class="item">
+            <img src="/img/2.png" alt="Product 2">
+            <div class="info">
+                <h3>Product 2</h3>
+                <h4>loammsmsm</h4>
+                <p>$30</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="/img/2.png" alt="Product 2">
+            <div class="info">
+                <h3>Product 2</h3>
+                <p>$30</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--shopping gallery-->
+<h1>Phones</h1>
+<div class="container">
+    <div class="gallery">
+        <div class="item">
+            <img src="/img/2.png" alt="Product 1">
+            <div class="info">
+                <h3>Product 1</h3>
+                <p>$20</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="/img/2.png" alt="Product 2">
+            <div class="info">
+                <h3>Product 2</h3>
+                <p>$30</p>
+            </div>
+        </div>
+        
+        <div class="item">
+            <img src="/img/2.png" alt="Product 2">
+            <div class="info">
+                <h3>Product 2</h3>
+                <h6>loammsmsm</h6>
+                <p>$30</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="/img/2.png" alt="Product 2">
+            <div class="info">
+                <h3>Product 2</h3>
+                <p>$30</p>
+            </div>
+        </div>
+    </div>
+</div>
+      
+<!--a video/ advertisement-->
+<div class="advert">
+    <div class="vid-wrap">
+        <!--the poster is the thumbnail for the video-->
+        <video poster="img/ultra.jpeg" src="vid/Apple Watch ULTRA Reveal (4K).mp4"
+        width="800" height="500" controls></video> <!--resizing and adding controls to the video-->
+    </div>
+    <ul class="playlist">
+        <li class="vid">
+            <!--video 1-->
+            <div class="vid-img">
+                <video poster="img/ultra.jpeg" src="/vid/Apple Watch ULTRA Reveal (4K).mp4k"
+                width="300" height="200" controls></video> </video> <!--adding controls to them-->
+            </div>
+            <div class="vid-detail">
+                <h4>title</h4> <!--title of the video-->
+                <p>descritpion</p> <!--description of the video-->
+            </div>
+        </li>
+        <!--video 2-->
+        <li class="vid">
+            <div class="vid-img">
+                <video poster="img/ultra.jpeg" 
+                src="/vid/Apple Watch ULTRA Reveal (4K).mp4k"
+                controls></video> </video> <!--adding controls to them-->
+            </div>
+            <div class="vid-detail">
+                <h4>title</h4> <!--title of the video-->
+                <p>descritpion</p> <!--description of the video-->
+            </div>
+        </li>
+        <!--video 3-->
+        <li class="vid">
+            <div class="vid-img">
+                <video poster="img/ultra.jpeg" 
+                src="/vid/Apple Watch ULTRA Reveal (4K).mp4k" 
+                controls></video> <!--adding controls to them-->
+            </div>
+            <div class="vid-detail">
+                <h4>title</h4> <!--title of the video-->
+                <p>descritpion</p> <!--description of the video-->
+            </div>
+        </li>
+        <!--video 4-->
+        <li class="vid">
+            <div class="vid-img">
+               <video poster="img/ultra.jpeg" 
+                src="/vid/Apple Watch ULTRA Reveal (4K).mp4k" 
+                controls></video> <!--adding controls to them-->
+            </div>
+            <div class="vid-detail">
+                <h4>title</h4> <!--title of the video-->
+                <p>descritpion</p> <!--description of the video-->
+            </div>
+        </li>
+    </ul>
+</div>
+
+<!--the footer-->
+<footer>
+    <div class="container">
+        <div class="icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+
+        <div class="nav">
+            <ul><li><a href="#">Our Team</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="/contact/contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        
+    </div>
+    <div class="bot"> <!-- the bottom part of the footer-->
+        <p>&copy;2024, eBox.company <span class="designer"></span></p>
+    </div>
+</footer>
+
+<!--external linking the javascript-->
+<script src="index.js"></script>
+
+</body>
+</html>
