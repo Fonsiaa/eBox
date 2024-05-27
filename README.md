@@ -1,7 +1,7 @@
 ## Web Development I
 Web Development Project
 
-## Module Overview
+## Overview
 Your task is to build an interactive website using web technologies. Your project should make use of the range of 
 techniques you have explored during the module and demonstrate your understanding of these techniques and ability 
 to deploy them successfully. For this assessment you have to decide a theme on which you will create your website.
