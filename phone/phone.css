@@ -106,7 +106,7 @@ nav {
   /*positioning the humburger menu to the top right*/
   transform: translate(-50%,-1550%);
   transition: .3s ease;
-  z-index: 2;
+  z-index: 1;
 }
 
 .menu.active span:nth-child(2) {

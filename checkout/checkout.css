@@ -95,6 +95,7 @@ left: 50%;
 /*positioning the humburger menu to the top right*/
 transform: translate(-50%,-1550%);
 transition: .3s ease;
+z-index: 1;
 }
 
 .menu.active span:nth-child(2) {
@@ -161,8 +162,8 @@ body {
   width: 75%;
   max-width: 960px;
   margin: 0 auto;
-  padding: 5% 0;
   margin-bottom: 5em;
+  padding-bottom:16%;
   
 }
 
@@ -181,11 +182,12 @@ body {
     &:link , &:visited {
       text-decoration: none;
       letter-spacing: -.015em;
-      font-size: .75em;
+      font-size: 1em;
       padding: 1em;
       font-weight: bold;
       border-radius: 50px;
-    float: right;
+      float: right;
+      color: white;
       text-align: right;
     }
 
@@ -196,9 +198,8 @@ body {
       right:0;
       
     }
-    &:hover , &:focus, &:active {
-      background: #830d0d00;
-      color: rgb(0, 0, 0);
+    &:hover , &:focus {
+      color: rgb(255, 255, 255);
       
       &:after {
         right: -10px;
