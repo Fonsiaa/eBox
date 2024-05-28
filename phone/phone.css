@@ -52,7 +52,7 @@ header a {
 
 /*navigational bar*/
 .screen-menu {
-  background-color: #4E2A84;
+  background-color: #4E2A84; /*bg colour of the nav bar*/
   height: 100vh;
   width: 100%;
   max-width: 450px;
@@ -62,9 +62,11 @@ header a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
+  text-align: left;
   font-size: 3rem;
   transition: .3s ease;
+  padding-left: 5%;
+  z-index: 1;
 }
 
 .screen-menu li {
