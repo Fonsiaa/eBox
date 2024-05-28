@@ -46,19 +46,21 @@ cursor: pointer;
 
 /*navigational bar*/
 .screen-menu {
-background-color: #4E2A84; /*bg colour of the nav bar*/
-height: 100vh; 
-width: 100%;
-max-width: 450px;
-position: fixed;
-top: 0;
-right: -450px;
-display: flex;
-flex-direction: column;
-justify-content: center;
-text-align: center;
-font-size: 3rem;
-transition: .3s ease;
+  background-color: #4E2A84; /*bg colour of the nav bar*/
+  height: 100vh;
+  width: 100%;
+  max-width: 450px;
+  position: fixed;
+  top: 0;
+  right: -450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  font-size: 3rem;
+  transition: .3s ease;
+  padding-left: 5%;
+  z-index: 1;
 }
 
 .screen-menu li {
@@ -165,7 +167,7 @@ body {
 }
 
 
-/* CART HEADER */
+/* my chart heading */
 .heading {
   padding: 1em 0;
   border-bottom: 1px solid #D0D0D0;
@@ -205,23 +207,7 @@ body {
   }
 }
 
-/* TABLE HEADING */ 
-
-.tableHead {
-  display: table;
-  width: 100%;
-  font-size: .75em;
-  li {
-    display: table-cell;
-    padding: 1em 0;
-    text-align: center;
-    &.prodHeader {
-      text-align: left;
-    }
-  }
-}
-
-/* CART Items */
+/* the items on the chart*/
 
 .cart {
   padding: 1em 0 ;
