@@ -499,9 +499,6 @@ h1 {
     transition: background-color 0.3s;
 }
 
-.gallery .item button:hover {
-    background-color: #000000;
-}
 
 
 /***************************/
