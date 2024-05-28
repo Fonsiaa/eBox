@@ -4,6 +4,87 @@
 body {
     color: #ffffff;
     background-color: #000000;
+    font-family: 'Electrolize';
+}
+
+/*navigational bar*/
+.screen-menu {
+    background-color: #4E2A84;
+    height: 100vh;
+    width: 100%;
+    max-width: 450px;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 3rem;
+    transition: .3s ease;
+    z-index: 1;
+}
+
+.screen-menu li {
+    list-style: none;
+    color: #ffffff;
+}
+
+.screen-menu.active {
+    right: 0;
+}
+
+nav {
+    padding: 1rem;
+    display: flex;
+    z-index: 10;
+}
+
+.screen-menu a {
+    text-decoration: none; /*remove the undeline*/
+}
+
+.menu {
+    height: 50px;
+    width: 50px;
+    margin-left: auto;
+    position: relative;
+}
+
+.menu span {
+    height: 5px; /*thickness of the menu bar*/
+    width: 100%;
+    background-color: #fbfbfb;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /*positioning the humburger menu to the top right*/
+    transform: translate(-50%,-1550%);
+    transition: .3s ease;
+    z-index: 1;
+}
+
+.menu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu span:nth-child(1) { /*the top/first bar of hamburger menu*/
+    top: 25%;
+}
+
+.menu.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%,-1550%) rotate(45deg);
+}
+
+.menu span:nth-child(3) { /*the last/bottom bar of hamburger menu*/
+    top: 75%;
+}
+
+.menu.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%,-1550%) rotate(-45deg); 
 }
 
 /*the title*/
@@ -11,11 +92,17 @@ header {
     position: relative;
     height: auto;
     font-weight: bold;
-    font-size: 53px;
-    text-align: center;
+    font-size: 53px; /*size of the text*/
+    text-align: center; /*alignment of the text*/
     margin: auto;
     padding: 2px;
+    /*adding animation on the header*/
     animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+header a {
+    color: white; /*colour of the text*/
+    text-decoration: none; /*removes the underline*/
 }
 
 @keyframes glow {
@@ -31,19 +118,14 @@ header {
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Electrolize';
-
 }
+
 section{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 85vh;
+    min-height: 70vh;
     width: 100%;
-    
-    background: url('background6.jpg')no-repeat;
-    background-position: center;
-    background-size: cover;
 }
 .form{
     position: relative;
@@ -94,10 +176,7 @@ h2{
     pointer-events: none;
     transition: .5s;
 }
-input:focus ~ label,
-input:valid ~ label{
-top: -5px;
-}
+
 .inputbox input {
     width: 100%;
     height: 50px;
@@ -134,7 +213,7 @@ top: -5px;
     text-decoration: underline;
 }
 
-.value button{
+.value button{ /*customizing the button*/
     width: 100%;
     height: 40px;
     border-radius: 40px;
@@ -143,19 +222,39 @@ top: -5px;
     outline: none;
     cursor: pointer;
     font-size: 1em;
-    font-weight: 600;
+    font-weight: bold;
+    color: white;
 }
+
+/*for the register text*/
 .register{
-    font-size: .9em;
+    font-size: .9em; /*font size*/
     text-align: center;
     margin: 25px 0 10px;
 }
-.register p a{
+
+.register a{
     text-decoration: none;
-    font-weight: 600;
-    color: white;
+    font-weight: bold;
+    color: white; /*text ccolour*/
 }
-.register p a:hover{
-    text-decoration: underline;
+.register a:hover{ /*when hovering on the register*/
+    text-decoration: underline; /*there will be underline*/
+}
+
+/*for the skip text*/
+.skip{
+    font-size: .9em;
+    text-align: center;
+    margin: 5px 0 5px;
+}
+
+.skip a{
+    text-decoration: none;
+    font-weight: 100; /*boldness level*/
+    color: white; /*text ccolour*/
+}
+.skip a:hover{ /*when hovering on the register*/
+    text-decoration: underline; /*there will be underline*/
     color: white;
 }

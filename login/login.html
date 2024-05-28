@@ -1,40 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!--font for the icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
   <link rel="stylesheet" href="login.css">
-  <title>HASH TECHIE OFFICIAL</title>
+  <title>eBox</title>
 </head>
 <body>
 
 <!--header of the website-->
 <header>
-    eBox <!--name of the website-->
+    <a href="/index.html">eBox</a> <!--name of the website-->
 </header>
 
+<!--navigational bar-->
+<div class="screen-menu">
+    <ul>
+        <a href=""><li><i class="fa fa-user-circle" aria-hidden="true">&nbsp;</i> Login </li></a>
+        <a href="/checkout/checkout.html"><li> <i class="fa-solid fa-cart-shopping"> &nbsp;</i>Checkout</li></a>
+    </ul>
+    <br>
+    <ul>
+    </ul>
+</div>
+
+<!--this will create the hamburger menu-->
+<nav>
+    <div class="menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</nav>
+
     <section>
-        <div class="form">
+        <div class="form"> <!--making the form-->
             <div class="value">
                 <form action="">
-                    <h2>Login</h2>
+                    <h2>Login</h2> <!--heading on the box-->
                     <div class="inputbox">
                         <ion-icon name="mail-outline"></ion-icon>
-                        <input type="email" required>
-                        <label for="">Email</label>
+                        <input type="email" required> <!--there should be a value in require-->
+                        <label for="">Email</label> <!--labels as email-->
                     </div>
+
                     <div class="inputbox">
                         <ion-icon name="lock-closed-outline"></ion-icon>
-                        <input type="password" required>
+                        <input type="password" required> <!--there should be a value in require-->
                         <label for="">Password</label>
                     </div>
+
                     <div class="forget">
                         <label for=""><input type="checkbox">Remember Me 
+                            <!--&emsp; is separating the "remember me" for "forget password"-->
                         &emsp; &emsp;&emsp;&emsp;&emsp;<a href="#">Forget Password</a></label>
                     </div>
                     
                     <button>Log in</button>
                     <div class="register">
-                        <p>Don't have a account <a href="#">Register</a></p>
-                        <a href="/index.html"><p><u>Skip for now</u></p></a>
+                        Don't have a account <a href="#">Register</a>
+                    </div>
+
+                    <div class="skip">
+                        <a href="/index.html">Skip for now</a>
                     </div>
                 </form>
             </div>
