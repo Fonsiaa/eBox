@@ -289,11 +289,6 @@ textarea.input {
   position: relative;
 }
 
-.text {
-  color: #ffffff;
-  margin: 1.5rem 0 2rem 0;
-}
-
 .information {
   display: flex;
   color: #ffffff;
@@ -302,9 +297,9 @@ textarea.input {
   font-size: 0.95rem;
 }
 
-.icon {
-  width: 28px;
-  margin-right: 0.7rem;
+.information i {
+  margin-left: 5% ;
+  padding-right: 4%;
 }
 
 .social-media {
@@ -319,7 +314,7 @@ textarea.input {
 .social-icons a {
   width: 35px;
   height: 35px;
-  border-radius: 5px;
+  border-radius: 50%;
   color: #fff;
   text-align: center;
   line-height: 35px;
@@ -329,14 +324,15 @@ textarea.input {
 
 .social-icons a:hover {
   transform: scale(1.05);
+  background-color:  #4E2A84;
+  color: white;
+  border-radius: 50%;
 }
 
 .contact-info:before {
-  content: "";
   position: absolute;
   width: 110px;
   height: 100px;
-  border: 22px solid #145f50;
   border-radius: 50%;
   bottom: -77px;
   right: 50px;
@@ -362,10 +358,6 @@ textarea.input {
     right: 70px;
   }
 
-  .text {
-    margin: 1rem 0 1.5rem 0;
-  }
-
   .social-media {
     padding: 1.5rem 0 0 0;
   }
@@ -385,7 +377,6 @@ textarea.input {
     padding: 1.7rem 1.6rem;
   }
 
-  .text,
   .information,
   .social-media p {
     font-size: 0.8rem;
