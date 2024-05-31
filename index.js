@@ -1,12 +1,25 @@
-//navigational bar/menu bar
-const menu = document.querySelector('.menu')
-const screenMenu = document.querySelector('.screen-menu')
+//navigational bar
+const body = document.querySelector('body'),
+sidebar = body.querySelector('nav'),
+toggle = body.querySelector(".toggle"),
+searchBtn = body.querySelector(".search-box"), 
+modeSwitch = body.querySelector(".toggle-switch"),
+modeText=body.querySelector(".mode-text");
+toggle.addEventListener("click" , () => {
+    sidebar.classList.toggle("close")
+});
 
-menu.addEventListener('click', () => {
-  menu.classList.toggle('active');
-  screenMenu.classList.toggle('active')
-})
+searchBtn.addEventListener("click", () => { 
+    sidebar.classList.remove("close") 
+});
 
+modeSwitch.addEventListener("click" , () => 
+    body.classList.toggle("dark"));
+    if (body.classList.contains("dark")) { 
+        modeText.innerText="Light mode";
+    } else { 
+        modeText.innerText="Dark mode"; 
+    };
 
 //the effect for the carousel
 let nextButton = document.getElementById('next');
@@ -47,4 +60,3 @@ const showSlider = (type) => {
     }, 2000);
 };
 
-////////////////////
