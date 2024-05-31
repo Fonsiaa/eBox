@@ -38,11 +38,11 @@ body {
 
 :root {
     --body-color: #f9f9f9;
-    --sidebar-color: #FFF;
-    --primary-color: #ffffff; 
-    --primary-color-light: #ffffff;
+    --sidebar-color: rgb(160, 130, 206);
+    --primary-color: rgb(143, 80, 237); 
+    --primary-color-light: rgb(255, 255, 255,0.5);
     --toggle-color: #DDD;
-    --text-color: #4f4c4c;
+    --text-color: #fbfbfb;
     --dark-color: #000;
     
     --tran-03: all 0.2s ease;
@@ -58,25 +58,15 @@ body {
     
 body.dark{
     --body-color: #1b1c1f;
-    --sidebar-color: #404244;
+    --sidebar-color: rgb(83, 98, 155);
     --primary-color: #a7bacb;
-    --primary-color-light: #505153;
+    --primary-color-light: rgba(255, 255, 255, 0.5);
     --toggle-color: #fff;
     --text-color: #ffffff;
     --dark-color: #fff;
 }
 
-body.dark .caro .title, 
-body.dark .caro .topic, 
-body.dark .caro .seeMore, 
-body.dark h1, body.dark h4,
-body.dark .item ,
-body.dark .info,  
-body.dark .col li a,
-body.dark .bot p{
-  color: white;
-}
-   
+  
 .sidebar{
     position: fixed;
     top: 0;
@@ -220,6 +210,7 @@ body.dark .sidebar header .toggle{
     font-size: 17px;
     font-weight: 500;
     transition: var(--tran-05);
+    padding-left: 5%;
 }
     
 .sidebar li a{
@@ -284,6 +275,7 @@ body.dark .mode .sun-moon i.moon{
     justify-content: center;
     border-radius: 6px;
     cursor: pointer; 
+    
 }
     
 .toggle-switch .switch{
@@ -305,6 +297,17 @@ body.dark .mode .sun-moon i.moon{
     transform: translateY(-50%);
     background-color: var(--sidebar-color); 
     transition: var(--tran-04);
+}
+
+body.dark .caro .title, 
+body.dark .caro .topic, 
+body.dark .caro .seeMore, 
+body.dark h1, body.dark h4,
+body.dark .item ,
+body.dark .info,  
+body.dark .col li a,
+body.dark .bot p{
+  color: white;
 }
 
 /*****************/
@@ -331,6 +334,9 @@ body.dark .mode .sun-moon i.moon{
       }
 }
 
+body.dark {
+    color: white;
+}
 
 /******************/
 /*the sider effect / carousel sider */
@@ -655,6 +661,14 @@ h1 {
     width: 320px;
 }
 
+body.dark /*items on the box*/
+.gallery .item {
+    border:3px solid rgb(74, 98, 166,0.3);
+    border-radius: 5px;
+    padding: 10px;
+    width: 320px;
+}
+
 .item img {
     margin-top: 6%;
     width: 90%;
@@ -667,7 +681,13 @@ h1 {
 }
 
 .info p {
-    background: #4E2A84;
+    background: rgb(160, 130, 206);
+    width: 50%;
+    margin-left: 25% ;
+}
+
+body.dark .info p {
+    background:#4a62a6 ;
     width: 50%;
     margin-left: 25% ;
 }
@@ -777,8 +797,15 @@ ul{
 	font-weight: 300;
 	display: block;
 	transition: all 0.3s ease;
+    color: #4E2A84;
 }
 .col ul li a:hover{
+	padding-left: 8px;
+    background-color: rgb(143, 80, 237);
+    color: white;
+}
+
+body.dark .col ul li a:hover{
 	padding-left: 8px;
     background-color: #1a3b94;
 }
@@ -793,9 +820,17 @@ ul{
 	line-height: 40px;
 	border-radius: 50%;
 	transition: all 0.5s ease;
+    color: #4E2A84;
 }
+
 .col .social-links a:hover{
+	background-color: rgb(143, 80, 237);
+    color: white;
+}
+
+body.dark .col .social-links a:hover{
 	background-color: #ffffff;
+    color: #4E2A84;
 }
 
 .bot{

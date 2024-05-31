@@ -21,6 +21,7 @@ modeSwitch.addEventListener("click" , () =>
         modeText.innerText="Dark mode"; 
     };
 
+
 //the effect for the carousel
 let nextButton = document.getElementById('next');
 let prevButton = document.getElementById('prev');
