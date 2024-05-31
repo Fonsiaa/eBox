@@ -314,12 +314,11 @@ body.dark .bot p{
 /*the title*/
 .top {
     position: absolute;
-    transform: translateX(550%);
     height: auto;
     font-weight: bold;
     font-size: 53px;
     text-align: center;
-    margin: auto;
+    margin: 0 45% auto;
     animation: glow 1.5s ease-in-out infinite alternate;
     background-color: transparent;
 }
