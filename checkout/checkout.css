@@ -683,6 +683,44 @@ body.dark .mode .sun-moon i.moon{
   }
 }
 
+body.dark .heading {
+  padding: 1em 0;
+  border-bottom: 1px solid #D0D0D0;
+  margin-top: 19%;
+ 
+  h1 {
+    color: white;
+    font-size: 2em;
+    float: left;
+  }
+
+  a.continue {
+    &:link , &:visited {
+      text-decoration: none;
+      letter-spacing: -.015em;
+      font-size: 1em;
+      padding: 1em;
+      font-weight: bold;
+      border-radius: 50px;
+      float: right;
+      color: rgb(255, 255, 255);
+      text-align: right;
+    }
+
+    &:after {
+      content: "\276f";
+      padding: .5em;
+      position: relative;
+      right:0;
+      
+      
+      &:after {
+        right: -10px;
+      }
+    }
+  }
+}
+
 /* the items on the chart*/
 
 .cart {
@@ -712,37 +750,56 @@ body.dark .mode .sun-moon i.moon{
 }
       
 h3 {   
-    font-size: 1em;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: .025em;        
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: .025em;
+  color: #000000;      
 }
 
 p {
-    display: inline-block;
-    font-size: .85em;
-    color: #ffffff;
-        .quantity {
-            font-weight: bold;
-            color: #333;
-        }
-        
-        &.stockStatus {
-            color: #82CA9C;
-            font-weight: bold;
-            padding: .5em 0 0 1em;
-            text-transform: uppercase;
-            &.out {
-                color: #F69679;
-            }
-        }
+  display: inline-block;
+  font-size: .85em;
+  color: #000000;
+  
+  &.stockStatus {
+      color: #82CA9C;
+      font-weight: bold;
+      padding: .5em 0 0 1em;
+      text-transform: uppercase;
+      &.out {
+          color: #F69679;
+      }
+  }
 }
 
-.itemImg {
-    width: 4em; 
-    float: left;      
+/*dark mode version*/
+body.dark h3 {   
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: .025em;
+  color: #ffffff;      
 }
 
+body.dark p {
+  display: inline-block;
+  font-size: .85em;
+  color: #ffffff;
+  
+  &.stockStatus {
+      color: #82CA9C;
+      font-weight: bold;
+      padding: .5em 0 0 1em;
+      text-transform: uppercase;
+      &.out {
+          color: #F69679;
+      }
+  }
+}
+
+
+/*the totala and quantity of the item*/
 &.qtyWrap , &.prodTotal {
     text-align: center;
     p {
@@ -752,25 +809,15 @@ p {
 }
       
     input.qty {
-        width: 2em;
-        text-align: center;
-        font-size: 1em;
-          padding: .25em;
+      width: 2em;
+      text-align: center;
+      font-size: 1em;
+      padding: .25em;
       margin: 1em .5em 0 0;
-        
-      }
-      .itemImg {
-        width: 8em;
-        display: inline;
-        padding-right: 1em;
-      }
-       
- 
+      } 
     }
   }
-  
-}   
- 
+} 
  .special {
    display: block;
   .specialContent {
@@ -805,20 +852,59 @@ a.remove {
 }
 
 .Code {
-  border:2px solid #efefef;
+  border:2px solid #000000;
   float: left;
   width: 35%;
   padding: 2%;
+
   label {
     display: block;
     width: 100%;
- font-style: italic;
+    font-style: italic;
     font-size: 1.15em;
- 
     margin-bottom: .5em;
     letter-spacing: -.025em;
-    
+}
+  input {
+    width: 85%;
+    font-size: 1em;
+    padding: .5em;
+    float: left;
+    border: 1px solid #6e6e6e;
+    &:active, &:focus {
+      outline: 0;
+     
+    }
   }
+  a.btn {
+    float: left;
+    width: 15%;
+    padding: .75em 0;
+    border-radius: 0 1em 1em 0;
+    text-align: center;
+    border: 1px solid #82ca9c;
+    &:hover {
+       border: 1px solid #f69679;
+       background: #7347b5;
+    }
+  }
+}
+
+body.dark .Code {
+  border:2px solid #ffffff;
+  float: left;
+  width: 35%;
+  padding: 2%;
+
+  label {
+    display: block;
+    width: 100%;
+    font-style: italic;
+    font-size: 1.15em;
+    margin-bottom: .5em;
+    color: white;
+    letter-spacing: -.025em;
+}
   input {
     width: 85%;
     font-size: 1em;
@@ -839,7 +925,8 @@ a.remove {
     border: 1px solid #82ca9c;
     &:hover {
        border: 1px solid #f69679;
-       background: #4E2A84;
+       background: #1a3b94;
+       color: white;
     }
   }
 }
@@ -900,15 +987,48 @@ width: 45%;
     .label {
       font-size: .85em;
       text-transform: uppercase;
-      color: #777;
-      
+      color: #222121;
     }
+    
     .value {
       letter-spacing: -.025em;
       width: 35%;
     }
   }
 }
+
+body.dark .subtotal {
+  float: right;
+  width: 45%;
+  
+    .totalRow {
+      padding: .5em;
+     text-align: right;
+     list-style: none; /*removes the dot from the list*/
+    
+      &.final {
+        font-size: 1.25emf;
+        font-weight: bold;
+      }
+      span {
+        display: inline-block;
+        padding: 0 0 0 1em;
+        text-align: right;
+        color: white;
+       
+      }
+      .label {
+        font-size: .85em;
+        text-transform: uppercase;
+        color: #e4e3e3;
+      }
+      
+      .value {
+        letter-spacing: -.025em;
+        width: 35%;
+      }
+    }
+  }
 
 @media only screen and (max-width:39.375em){
 
